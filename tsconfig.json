@@ -8,7 +8,8 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "types": ["node"]
   },
   "include": ["*.js", "*.ts"]
 }

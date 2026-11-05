@@ -34,7 +34,11 @@
     "lint": "oxlint",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@canac/oxlint-plugins": "^0.2.0"
+  },
   "devDependencies": {
+    "@types/node": "^26.6.6",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.87.0",
     "oxlint-tsgolint": "^7.0.2004",

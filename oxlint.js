@@ -1,6 +1,9 @@
+import { fileURLToPath } from "node:url";
+
 /** @type {import("oxlint").OxlintConfig} */
 const config = {
   plugins: ["eslint", "typescript", "unicorn", "oxc"],
+  jsPlugins: [fileURLToPath(import.meta.resolve("@canac/oxlint-plugins"))],
   options: {
     typeAware: true,
   },
@@ -8,7 +11,9 @@ const config = {
     correctness: "error",
   },
   rules: {
+    curly: "error",
     "no-console": "error",
+    "canac/descriptive-names": "error",
     "object-shorthand": "error",
     "typescript/adjacent-overload-signatures": "error",
     "typescript/ban-ts-comment": "error",
